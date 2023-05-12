@@ -31,7 +31,7 @@ def catch_all(path=""):
 
     response = openai.Completion.create(
 
-    #   engine="text-davinci-003",
+      engine="text-davinci-003",
       prompt=prompt.replace("{{URL_PATH}}",path),
       max_tokens=60,
         n=1,
