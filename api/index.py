@@ -3,7 +3,7 @@ import os
 from flask import Flask
 
 
-#load environment variables
+# load environment variables
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -16,7 +16,7 @@ add href links to related topics
 
 """
 
-html_snippet="""
+html_snippet = """
 <!doctype html>
 <html>
 <head><title>Everything Site</title></head>
@@ -25,18 +25,19 @@ html_snippet="""
 
 app = Flask(__name__)
 
+
 @app.route('/')
 @app.route('/<path:path>')
 def catch_all(path=""):
 
     response = openai.Completion.create(
 
-      engine="text-davinci-003",
-      prompt=prompt.replace("{{URL_PATH}}",path),
-      max_tokens=60,
+        engine="text-davinci-003",
+        prompt=prompt.replace("{{URL_PATH}}", path),
+        max_tokens=300,
         n=1,
-    #   stop=None,
-      temperature=0.7,
+        #   stop=None,
+        temperature=0.7,
     )
 
     return response.choices[0].text
