@@ -3,7 +3,7 @@
     { "source": "/(.*)", "destination": "/api/index" }
   ],
   "functions": {
-    "api/test.js": {
+    "api/index.py": {
       "maxDuration": 60
     }
   }
