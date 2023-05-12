@@ -34,12 +34,12 @@ def catch_all(path=""):
 
         engine="text-davinci-003",
         prompt=prompt.replace("{{URL_PATH}}", path),
-        max_tokens=100,
+        max_tokens=300,
         n=1,
         #   stop=None,
         temperature=0.7,
     )
 
-    return response.choices[0].text
-    # return html_snippet+response.choices[0].text
+    # return response.choices[0].text
+    return html_snippet+response.choices[0].text
     # f"<p>{path}</p>"
