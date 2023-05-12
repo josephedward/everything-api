@@ -2,8 +2,6 @@
 
 The Everything API is a thought experiment and learning exercise that explores the potential of OpenAI's GPT model to generate web content dynamically based on URL paths. The concept is simple: any path entered into the URL becomes a query that is sent to the GPT model, which then generates the content for the resulting page on the fly.
 
-This project is primarily a learning exercise and was inspired by this [tutorial video](https://www.youtube.com/watch?v=M2uH6HnodlM). It aims to demonstrate the power and potential of GPT models in creating highly dynamic and flexible web applications.
-
 ## How It Works
 
 When a request is made to a certain path, that path is treated as a prompt for the GPT model. The model then generates a page of content based on that prompt, which means every page is unique and is generated dynamically based on the user's query.
@@ -31,9 +29,13 @@ You can now navigate to `localhost:3000` and begin exploring the Everything API!
 
 While the Everything API demonstrates the potential of GPT models, it's important to acknowledge the limitations. The quality and relevance of generated content is reliant on the GPT model, which, although powerful, isn't flawless. The response time can vary based on the size of the prompt and the number of tokens requested, potentially impacting user experience.
 
-## Contributions
+## Origin
 
 The Everything API is an open project, and contributions are welcome! If you have a feature request, bug report, or proposal, feel free to open an issue on our GitHub repository. If you're interested in contributing code, please open a pull request.
+
+## Contributing
+
+This project is primarily a learning exercise and was inspired by this [tutorial video](https://www.youtube.com/watch?v=M2uH6HnodlM) from LiveUnderflow. It aims to demonstrate the power and potential of GPT models in creating highly dynamic and flexible web applications.
 
 ## License
 
@@ -42,12 +44,8 @@ The Everything API is an open source project, licensed under the MIT license. Pl
 ## Flask + Vercel
 This example shows how to use Flask 2 on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
 
-## Template Demo URL 
-https://flask-python-template.vercel.app/
-
 ## How it Works
 This example uses the Web Server Gateway Interface (WSGI) with Flask to enable handling requests on Vercel with Serverless Functions.
-
 
 ## One-Click Deploy
 
