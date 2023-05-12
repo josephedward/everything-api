@@ -38,5 +38,5 @@ def catch_all(path=""):
       temperature=0.7,
     )
 
-    return html_snippet+response
+    return response
     # f"<p>{path}</p>"
