@@ -6,7 +6,7 @@ The Everything API is a thought experiment and learning exercise that explores t
 
 When a request is made to a certain path, that path is treated as a prompt for the GPT model. The model then generates a page of content based on that prompt, which means every page is unique and is generated dynamically based on the user's query.
 
-For instance, a navigation to `/actors/brad_pitt` will yield a GPT-generated page about Brad Pitt, while `/recipes/chocolate_chip_cookies` will prompt the API to create a page about making chocolate chip cookies.
+For instance, a navigation to `/actors/steve_buscemi` will yield a GPT-generated page about Brad Pitt, while `/recipes/chocolate_chip_cookies` will prompt the API to create a page about making chocolate chip cookies.
 
 ## Setup
 
