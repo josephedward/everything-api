@@ -30,11 +30,12 @@ app = Flask(__name__)
 def catch_all(path=""):
 
     response = openai.Completion.create(
-      engine="gpt-3.5-turbo",
+
+    #   engine="text-davinci-003",
       prompt=prompt.replace("{{URL_PATH}}",path),
-      max_tokens=1024,
-      n=1,
-      stop=None,
+      max_tokens=60,
+        n=1,
+    #   stop=None,
       temperature=0.7,
     )
 
