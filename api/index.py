@@ -34,7 +34,7 @@ def catch_all(path=""):
 
         engine="text-davinci-003",
         prompt=prompt.replace("{{URL_PATH}}", path),
-        max_tokens=300,
+        max_tokens=100,
         n=1,
         #   stop=None,
         temperature=0.7,
