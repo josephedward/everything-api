@@ -9,7 +9,7 @@ This project is primarily a learning exercise and was inspired by this [tutorial
 
 When a request is made to a certain path, that path is treated as a prompt for the GPT model. The model then generates a page of content based on that prompt, which means every page is unique and is generated dynamically based on the user's query.
 
-For instance, a navigation to `/actors/steve_buscemi` will yield a GPT-generated page about Stephen Buscemi, while `/recipes/chocolate_chip_cookies` will prompt the API to create a page about making chocolate chip cookies.
+For instance, a navigation to `/actors/steve_buscemi` will yield a GPT-generated page about Stephen Buscemi(everything-api-rszw.onrender.com/steve_buscemi), while `/recipes/chocolate_chip_cookies` will prompt the API to create a page about making chocolate chip cookies.
 
 ## Setup
 
