@@ -1,15 +1,13 @@
 from openai import OpenAI
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 import os
 from flask import Flask
-
 # load environment variables
 from dotenv import load_dotenv
 load_dotenv()
 
 # Load OpenAI API key from environment variable
 
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 prompt = """Generate an html document that matches  the following URL path: `{{URL_PATH}}`
 add href links to related topics
